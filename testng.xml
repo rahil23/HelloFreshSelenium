@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HelloFreshSuite" parallel="tests">
+<listeners>
+	<listener class-name="utility.CustomeListener"/>
+</listeners>
+
+ <test name="ProductPurchase">
+  <parameter name="browser" value="FF"/>
+   
+    <classes>
+     <class name="testScript.ProductPurchase"/>
+     </classes>
+     </test>
+     
+      <test name="Login">
+  <parameter name="browser" value="GC"/>
+   
+    <classes>
+     <class name="testScript.Login"/>
+     </classes>
+     </test>
+         
+              <test name="RegisterUser">
+  <parameter name="browser" value="GC"/>
+   
+    <classes>
+     <class name="testScript.RegisterUser"/>
+     </classes>
+     </test>
+         
+   
+  
+</suite> 

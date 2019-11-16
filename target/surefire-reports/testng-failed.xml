@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [HelloFreshSuite]">
+  <listeners>
+    <listener class-name="utility.CustomeListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Login(failed)">
+    <parameter name="browser" value="GC"/>
+    <classes>
+      <class name="testScript.Login">
+        <methods>
+          <include name="pre_driver"/>
+          <include name="loginUser"/>
+          <include name="post"/>
+        </methods>
+      </class> <!-- testScript.Login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [HelloFreshSuite] -->
